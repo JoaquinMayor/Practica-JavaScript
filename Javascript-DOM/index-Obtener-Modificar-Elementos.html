@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JavaScript</title>
+    <style>
+    .azul{
+        color:blue;
+    } 
+    </style>
+</head>
+<body>
+    <h1 id="cabecero" class="azul">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo1" class="azul">Saludos!</p>
+    <p id="parrafo2" class="azul">Otro Parrafo</p>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="perro()">Aburrido</button>
+    <button onclick="perro2()">Galleta</button>
+
+    <img id="imagen" src="./img/boxer-1277804_1280.jpeg">
+
+    <script>
+        let cabecero = document.getElementById("cabecero").innerHTML; /*Con el innerHTML se accede al texto que se encuentra en el elemento*/
+        console.log("valor cabecero: " + cabecero);
+
+        let parrafo = document.getElementById("parrafo1"); //se puede acceder despues al inner y luego da la posibilidad de modificar
+        console.log("Valor parrafo: " + parrafo.innerHTML);
+       
+        parrafo.innerHTML = "Nuevo Valor del Parrafo"; //Se cambia el valor del parrafo
+
+        let parrafos = document.getElementsByTagName("p"); //Retorna un arreglo de elementos
+
+        console.log("No. parrafos: " + parrafos.length);
+       
+        for(let i = 0; i<parrafos.length; i++){
+            console.log("I: "+i+ " - "+parrafos[i].innerHTML);
+        }
+
+        let elementos = document.querySelectorAll("p.azul"); //Seleccion de elementos y su clase
+
+        document.write("Saludos desde Javascript"); //Escribe en la pagina sin tener una referencia en la estructura html, en un boton sobre escribe todo
+
+        function mostrar(){
+            document.write("ADIOS");
+        }
+
+        function perro(){
+            document.getElementById("imagen").src = "./img/boxer-1403830_1280.jpeg"; //Cambio de imagendesoues del get elementocon. y la carcateristica pñodes modificar todo
+            document.getElementById("cabecero").style.color = "red"; // modificar estilo
+        }
+
+        function perro2(){
+            document.getElementById("imagen").src = "./img/boxer-1277804_1280.jpeg";
+            document.getElementById("cabecero").style.color = "blue"; // modificar estilo
+        }
+
+        document.getElementById("cabecero").style.color = "red"; // modificar estilo
+        
+    </script>
+</body>
+</html>
