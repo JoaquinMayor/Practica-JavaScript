@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+
+<body onload="entrar()"> <!--Se aplica onload cuando se carga la pagina web-->
+
+    <h1 onclick="cambiarTexto1(this)" >Manejo de DOM con JavaScript</h1> 
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de DOM con JavaScript</h1><!--Onmouseover evento cuando el mouse esta encima del elemento y onmouseout cuando se quita el raton-->
+    <h1 id="titulo2" onmousedown="rojo(this)" onmouseup="azul(this)">Manejo de DOM con JavaScript</h1><!--onmousedown cuando damos click y unmouseup cuando soltamos el click-->
+    <div id="mostrar"></div>
+    
+    <br>
+
+    <label for="nombre">Nombre:</label>
+    <input name="nombre" type="text" id="nombre" onchange="convertir()"> <!--Onchange captura el evento cuando se hace un cambio en el texto o imput-->
+    
+    <label for="nombre2">Nombre:</label>
+    <input name="nombre2" type="text" id="nombre2" onfocus="cambiar(this)" onblur="regresar(this)">
+
+    <label for="apellido">Apellido:</label>
+    <input name="apellido" type="text" id="apellido" >
+
+
+
+    <script>
+        function cambiarTexto1(titulo){
+            console.log(titulo);
+            titulo.innerHTML = "Nuevo Titulo";
+        }
+
+        document.getElementById("titulo").onclick = cambiarTexto2; //Le permite aplicar el evento sin ponerlo en el html
+
+        function cambiarTexto2(){
+            document.getElementById("mostrar").innerHTML = "Nuevo Contenido"
+        }
+
+        function entrar(){
+            alert("Entrando a la pagina web"); // Muestra un cartel
+            let texto = "";
+            if(navigator.cookieEnabled){ //Navigator tiene varias funciones de corroboracion de carcateristicas de la pagina
+                texto = "Cookies estan habilitadas"
+                
+            }else{
+                texto = "Coockes estan inabilitadas"
+            }
+
+            document.getElementById("mostrar").innerHTML = texto;
+        }
+
+        function convertir(){
+            let nombre = document.getElementById("nombre");
+            nombre.value = nombre.value.toUpperCase();
+        }
+
+        function rojo(titulo){
+            titulo.style.color = "red";
+        }
+
+        function azul(titulo){
+            titulo.style.color = "blue";
+        }
+
+        function cambiar(elementoInput){
+            elementoInput.style.background = "yellow";
+        }
+
+        function regresar(elementoInput){
+            elementoInput.style.background = "white";
+        }
+
+        document.getElementById("apellido").addEventListener("focus", cambiar2);  //Agrega uno o mas eventos al elemento que estamos recuperando, se le pasa el evento sin el on y la funcion
+        document.getElementById("apellido").addEventListener("blur", regresar2);
+        function cambiar2(evento){
+            let componente = evento.target;
+            componente.style.background = "yellow";
+        }
+
+        function regresar2(evento){
+            let componente = evento.target;
+            componente.style.background = "white";
+        }
+    </script>
+</body>
+</html>
