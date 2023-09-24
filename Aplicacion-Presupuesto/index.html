@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Presupuesto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="presupuesto">
+        <p class="titulo-disponible">Presupuesto Disponible:</p>
+        <p class="total" id="total"></p>
+        
+        <section class="valores">
+            <div class="ingresos dispocion-valores">
+                <p>INGRESOS</p>
+                <p class="ingreso-total" id="ingreso-total"></p>
+            </div>
+
+            <div class="egresos dispocion-valores">
+                <p>EGRESOS</p>
+                <p class="egreso-total " id="egreso-total"></p>
+                <p class="porcentaje" id="porcentaje"></p>
+            </div>
+        </section>
+    </header>
+
+    <section class="formulario">
+        <form>
+            <select id="tipo" class="tipo opcion">
+                <option value="ingreso">+</option>
+                <option value="egreso">-</option>
+            </select>
+
+            <input type="text" placeholder="Nuevo Ingreso o Egreso" id="nombre" class="nombre opcion">
+            <input type="number" placeholder="Monto" id="monto" class="monto opcion">
+        </form>
+        <button onclick="cargarPresupuesto()" id="confirmar" class="confirmar opcion">Confirmar</button>
+    </section>
+    
+    <section class="listas">
+        <div class="ingresos-contenedor">
+            <p>INGRESOS</p>
+            <ul id="lista-ingreso" class="lista-ingreso"></ul>
+        </div>
+
+        <div class="egresos-contenedor">
+            <p>EGRESOS</p>
+            <ul id="lista-egreso" class="lista-egreso"></ul>
+        </div>
+        
+    </section>
+
+    <script src="./js/presupuestos.js"></script>
+</body>
+</html>

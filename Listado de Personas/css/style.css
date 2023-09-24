@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(to left, #03045e, #caf0f8);;
+    
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    background-color: #0077b6;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 4rem;
+}
+
+.formulario{
+    background-color: white;
+    padding: 0rem 4rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.agregar{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 100%;
+    color: white;
+}
+.agregar:hover{
+    background-color: #2d95cd;
+    color:black;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    gap: 2rem;
+}
+
+input{
+    border-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: white;
+    height: 2.5rem;
+    font-size: 1rem;
+   
+}
+
+.listado{
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+}

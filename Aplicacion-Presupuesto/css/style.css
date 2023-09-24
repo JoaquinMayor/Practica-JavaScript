@@ -1,0 +1,110 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#e7ad99,#ce796b);
+    color: white;
+    
+}
+
+.titulo-disponible{
+    font-size: 2rem;
+    margin:0;
+}
+
+.total{
+    font-size: 3rem;
+    margin:0.5rem;
+}
+
+.dispocion-valores{
+    margin-top: 1rem;
+    display: flex;
+    gap:9rem;
+    padding: 0 3rem;
+}
+.ingresos{ 
+    background-color: #43bccd;
+}
+
+.egresos{
+    background-color: #ff3333;   
+    margin-bottom: 2rem;
+}
+
+.formulario{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: ghostwhite;
+    padding: 1rem;
+}
+
+.opcion{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.confirmar{
+    background-color: #0ead69;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.confirmar:hover{
+    background-color: #097245;
+    color: black;
+}
+
+.listas{
+    display:flex;
+    justify-content:center;
+    gap:8rem;
+}
+
+.ingresos-contenedor{ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ingresos-contenedor p{
+    font-size: 1.5rem;
+    color:#43bccd;
+    text-align: center;
+}
+
+.egresos-contenedor p{
+    font-size: 1.5rem;
+    color:#ff3333;
+    text-align: center;
+}
+
+hr{
+    opacity: 0.5;
+}
+
+ul{
+    margin-top: 0;
+    list-style-type: none;
+}
+
+li{
+    font-size: 1.4rem;
+}
+
+span{
+    margin-left: 10rem;
+}
+.monto-ingreso{
+    color:#43bccd;
+}
+
+.monto-egreso{
+    color: #ff3333;
+}
