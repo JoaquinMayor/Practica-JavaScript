@@ -35,4 +35,6 @@
 3. Práctica Herencia (POO).
 4. Práctica Mundo PC.
 5. Práctica Sistema de Ventas
-![Dependencias SpringBoot](https://phoneunder.files.wordpress.com/2016/03/javascript-logo-png.png)
+
+
+![Dependencias SpringBoot](https://desarrolloweb.com/storage/manual_images/V14nEKhx4G5SRJLddT6qrStNKRJosOleRmxkGVN2.jpeg)
