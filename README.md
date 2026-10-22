@@ -1,4 +1,41 @@
-# Práctica JavaScript
+# Codigos acerca de fundamentos y conceptos básicos de JavaScript
+## Con Mini-Ejercicios prácticos.
+
+### Conceptos
+
+1. Concatenación
+2. Tipos de Datos.
+3. Operadores y Operadores Lógicos.
+4. Sentencias de Control.
+5. Ciclos JavaScript
+6. Arreglos.
+7. Funciones.
+8. Objetos.
+9. Clases.
+10. Strict.
+11. Programación orientada a objetos (POO).
+12. Manejo de Errores.
+13. Funciones Flecha.
+14. Funciones CallBack.
+15. Promesas.
+
+### Ejercicios Prácticos
+#### En Capetas (Incluye HTML y CSS)
+1. Aplicación de Presupuestos.
+2. Calculadora.
+3. JavaCript Eventos DOM.
+4. JavaScript DOM (Manejo con Formularios).
+5. Manejo de Listado de Personas.
+6. Reloj Digital.
+
+#### Archivos Unicamente de JavaScript
+1. Ejercicios Mayores de Edad (Operadores Lógicos).
+2. Ejercicios Par o Impar (Operadores Lógicos).
+3. Práctica Herencia (POO).
+4. Práctica Mundo PC.
+5. Práctica Sistema de Ventas
+
+![Dependencias SpringBoot](https://desarrolloweb.com/storage/manual_images/V14nEKhx4G5SRJLddT6qrStNKRJosOleRmxkGVN2.jpeg)
 
 Repositorio de **práctica** con los ejercicios que fui realizando para aprender **JavaScript** desde cero: fundamentos del lenguaje, programación orientada a objetos, asincronía, manipulación del DOM y algunas mini aplicaciones web hechas con HTML, CSS y JavaScript puro (vanilla).
 
@@ -10,7 +47,7 @@ Repositorio de **práctica** con los ejercicios que fui realizando para aprender
 - HTML5
 - CSS3
 
-## Estructura del proyecto
+## Estructura del proyecto (detalle)
 
 ### Fundamentos (archivos numerados)
 
@@ -54,18 +91,6 @@ Repositorio de **práctica** con los ejercicios que fui realizando para aprender
 - `Listado de Personas/`: agrega personas (nombre y apellido) a una lista, capitalizando la primera letra y validando que los campos no estén vacíos.
 - `Reloj-Digital/`: reloj que muestra hora, día y mes, actualizándose cada segundo con `setInterval`.
 - `Aplicacion-Presupuesto/`: registro de ingresos y egresos con una clase `Elemento`, cálculo del total disponible, totales de ingresos/egresos, porcentaje de egresos y opción para borrar cada elemento.
-
-## Conceptos aplicados
-
-- Variables (`let`, `const`), tipos de datos y conversión de tipos.
-- Operadores y estructuras de control (condicionales y ciclos).
-- Funciones: declaraciones, expresiones, flecha, callbacks y hoisting.
-- Objetos, prototipos, funciones constructoras, `call`/`apply` y JSON.
-- POO con clases: encapsulamiento con getters/setters, herencia, polimorfismo y miembros estáticos.
-- Manejo de errores y modo estricto.
-- Asincronía: `setTimeout`, `setInterval`, promesas y `async`/`await`.
-- Manipulación del DOM y manejo de eventos.
-- Template literals para generar HTML dinámico.
 
 ## Cómo ejecutarlo
 
